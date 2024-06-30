@@ -17,56 +17,74 @@ int main(){
         switch(op){
             case 1:
                 if(num==3){
-                    cout<<"Computadora: Tijeras"<<endl;
-					cout<<"GANASTE"<<endl;
+                	cout<<"USUARIO: Piedra"<<endl;
+                    cout<<"COMPUTADORA: Tijeras"<<endl;
+					cout<<"--> GANASTE"<<endl;
+					cout<<"---------------------------"<<endl;
                     i++;
                 }else{
 					if(num==2){
-                		cout<<"Computadora: Papel"<<endl;
-                    	cout<<"PERDISTE"<<endl;
+						cout<<"USUARIO: Piedra"<<endl;
+                		cout<<"COMPUTADORA: Papel"<<endl;
+                    	cout<<"--> PERDISTE"<<endl;
+                    	cout<<"---------------------------"<<endl;
                     	j++;
                 	}else{
-                		cout<<"Computadora: Piedra"<<endl;
-                    	cout<<"EMPATE"<<endl;
+                		cout<<"USUARIO: Piedra"<<endl;
+                		cout<<"COMPUTADORA: Piedra"<<endl;
+                    	cout<<"--> EMPATE"<<endl;
+                    	cout<<"---------------------------"<<endl;
                 	}
 				}
                 break;  
             case 2:
                 if(num==1){
-                	cout <<"Computadora: Piedra"<<endl;
-                    cout <<"GANASTE"<<endl;
+                	cout<<"USUARIO: Papel"<<endl;
+                	cout <<"COMPUTADORA: Piedra"<<endl;
+                    cout <<"--> GANASTE"<<endl;
+                    cout <<"---------------------------"<<endl;
                     i++;
                 }else{
 					if(num==3){
-                		cout<<"Computadora: Tijeras"<<endl;
-                    	cout<<"PERDISTE"<<endl;
+						cout<<"USUARIO: Papel"<<endl;
+                		cout<<"COMPUTADORA: Tijeras"<<endl;
+                    	cout<<"--> PERDISTE"<<endl;
+                    	cout<<"---------------------------"<<endl;
                     	j++;
                 	}else{
-                		cout<<"Computadora: Papel"<<endl;
-                    	cout<<"EMPATE" <<endl;
+                		cout<<"USUARIO: Papel"<<endl;
+                		cout<<"COMPUTADORA: Papel"<<endl;
+                    	cout<<"--> EMPATE" <<endl;
+                    	cout<<"---------------------------"<<endl;
                 	}
 				}
                 break;
             case 3:
                 if(num==2){
-                	cout<<"Computadora: Papel"<<endl;
-                    cout<<"GANASTE"<<endl;
+                	cout<<"USUARIO: Tijeras"<<endl;
+                	cout<<"COMPUTADORA: Papel"<<endl;
+                    cout<<"--> GANASTE"<<endl;
+                    cout<<"---------------------------"<<endl;
                     i++;
                 }else{
 					if(num==1){
-                		cout <<"Computadora: Piedra"<<endl;
-                    	cout << "PERDISTE" <<endl;
+						cout<<"USUARIO: Tijeras"<<endl;
+                		cout <<"COMPUTADORA: Piedra"<<endl;
+                    	cout << "--> PERDISTE" <<endl;
+                    	cout << "---------------------------" <<endl;
                     	j++;
                 	}else{
-                		cout <<"Computadora: Tijeras"<<endl;
-                    	cout << "EMPATE" <<endl;
+                		cout<<"USUARIO: Tijeras"<<endl;
+                		cout <<"COMPUTADORA: Tijeras"<<endl;
+                    	cout << "--> EMPATE" <<endl;
+                    	cout << "---------------------------" <<endl;
                 	}
             	}
                 break;
         }
     }while(i!=3&&j!=3);
 	cout << "-------RONDAS GANADAS------" <<endl;
-    cout<<"Usuario: "<<i<<endl;
-    cout<<"Computadora: "<<j<<endl;
+    cout<<"USUARIO: "<<i<<endl;
+    cout<<"COMPUTADORA: "<<j<<endl;
     return 0;
 }
